@@ -15,4 +15,53 @@
     <applicationListeners>
         <listener class="com.github.ttxd19.seatcattab.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
+    <actions>
+        <action id="SortByNameAction"
+                class="com.github.ttxd19.seatcattab.sort.SortByAlphabet"
+                text="Sort by Name A~Z"
+                description="Sort tabs by file name">
+        </action>
+
+        <action id="SortByNameReversedAction"
+                class="com.github.ttxd19.seatcattab.sort.SortByAlphabetReversed"
+                text="Sort by Name Z~A"
+                description="Sort tabs by file name reversed">
+        </action>
+
+        <action id="SortByLastOpenAction"
+                class="com.github.ttxd19.seatcattab.sort.SortByRecentOpened"
+                text="Sort by Last Opened"
+                description="Sort tabs by last opened time">
+        </action>
+
+        <action id="SortByFileType"
+                class="com.github.ttxd19.seatcattab.sort.SortByFileType"
+                text="Sort by Type"
+                description="Sort tabs by file type">
+        </action>
+
+        <action id="SortByLastModified"
+                class="com.github.ttxd19.seatcattab.sort.SortByFileLastModified"
+                text="Sort by Last Modified"
+                description="Sort tabs by last modified">
+        </action>
+
+        <action id="SortByDirectory"
+                class="com.github.ttxd19.seatcattab.sort.SortByFileDirectory"
+                text="Sort by Directory"
+                description="Sort tabs by file directory">
+        </action>
+
+        <group id="TabSortingSubGroup" text="Sort Tabs" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+
+            <reference ref="SortByNameAction"/>
+            <reference ref="SortByNameReversedAction"/>
+            <reference ref="SortByLastOpenAction"/>
+            <reference ref="SortByLastModified"/>
+            <reference ref="SortByFileType"/>
+            <reference ref="SortByDirectory"/>
+        </group>
+    </actions>
 </idea-plugin>
