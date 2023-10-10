@@ -53,6 +53,13 @@
                 description="Sort tabs by file directory">
         </action>
 
+        <action id="ShowMyFormAction"
+                class="com.github.ttxd19.seatcattab.sort.custom.SortCustomAction"
+                text="Custom Sort"
+                description="Display my custom form">
+            <add-to-group group-id="ToolsMenu" anchor="first" />
+        </action>
+
         <group id="TabSortingSubGroup" text="Sort Tabs" popup="true">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
 
