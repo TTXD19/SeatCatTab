@@ -31,7 +31,7 @@
 
         <action id="SortByLastOpenAction"
                 class="com.github.ttxd19.seatcattab.sort.SortByRecentOpened"
-                text="Sort by Last Opened"
+                text="Sort by Recently Opened"
                 description="Sort tabs by last opened time">
         </action>
 

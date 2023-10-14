@@ -1,6 +1,6 @@
 package com.github.ttxd19.seatcattab.guiform
 
-import com.github.ttxd19.seatcattab.common.SortLogic.SortType
+import com.github.ttxd19.seatcattab.common.SortType
 import javax.swing.JComboBox
 import javax.swing.JPanel
 
